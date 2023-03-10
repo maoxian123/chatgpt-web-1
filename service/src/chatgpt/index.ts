@@ -105,6 +105,7 @@ async function chatReplyProcess(
       onProgress: (partialResponse) => {
         process?.(partialResponse)
       },
+			systemMessage:'你是一个精通各种语言的高级程序员,我需要你帮助我解决我给出的代码中的问题和实现我提出的编程需求.'
     })
 
     return sendResponse({ type: 'Success', data: response })
